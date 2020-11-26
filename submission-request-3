@@ -1,0 +1,6 @@
+/* c. вывести те продукты (product.name), остатки по которым по всем складам суммарно
+превышают 100 единиц (goods.quantity) с указанием склада (warehouse.name), на котором
+находится наибольшее количество единиц. */
+
+SELECT product.name, goods.quantity, warehouse.name FROM product, warehouse, goods
+WHERE  goods.quantity > 100
