@@ -1,0 +1,6 @@
+Задача: для приведенной в Задаче 1 схемы данных:
+a. вывести список складов (warehouse.name) с суммарным остатками продуктов немецких
+брендов (brand.country="DE").
+
+SELECT warehouse.name, brand.country FROM warehouse, brand
+WHERE (brand.country="DE")
