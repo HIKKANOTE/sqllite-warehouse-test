@@ -1,3 +1,0 @@
-/* request */
-
-SELECT brand.name, goods.quantity FROM brand, goods ORDER BY quantity DESC
