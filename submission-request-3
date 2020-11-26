@@ -3,4 +3,4 @@
 находится наибольшее количество единиц. */
 
 SELECT product.name, goods.quantity, warehouse.name FROM product, warehouse, goods
-WHERE  goods.quantity > 100
+WHERE  goods.quantity > 100 ORDER by quantity DESC
