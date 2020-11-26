@@ -1,0 +1,6 @@
+/* b. Вывести продукты (product.name) с указанием их бренда (brand.name), которые в данный
+момент отсутствуют на всех складах. Под отсутствием понимать отсутствие записи
+продукта в таблице товаров (goods), а не нулевое количество. */
+
+SELECT product.name, brand.name, quantity FROM product, brand, goods
+WHERE goods.quantity Not IN (1,2,3,4)
